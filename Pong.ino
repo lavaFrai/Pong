@@ -61,7 +61,7 @@ void loop() {
   leftRacket.draw(u8g2);
   rightRacket.draw(u8g2);
 
-  game.drawScore();
+  if (SHOW_SCORE) game.drawScore();
   if (SHOW_SCREEN_FRAME) game.drawFrame();
 
   u8g2.sendBuffer();
